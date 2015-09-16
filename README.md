@@ -1,6 +1,8 @@
 # docker-apache-ignite
 Lean (310MB) Apache Ignite docker image powered by Alpine.
 
+[![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-apache-ignite/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-apache-ignite)
+
 ## Software
 
 * Apache Ignite 1.3.0
