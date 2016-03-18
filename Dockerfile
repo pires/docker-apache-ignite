@@ -1,4 +1,4 @@
-FROM quay.io/pires/docker-jre:8u60
+FROM quay.io/pires/docker-jre:8u72
 
 ENV IGNITE_VERSION 1.3.0
 ENV IGNITE_PATH apache-ignite-fabric-$IGNITE_VERSION-incubating-bin

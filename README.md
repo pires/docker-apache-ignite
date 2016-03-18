@@ -1,12 +1,12 @@
 # docker-apache-ignite
-Lean (310MB) Apache Ignite docker image powered by Alpine.
+Lean (274MB) Apache Ignite Docker image based on `alpine:edge` and OpenJDK 8.
 
 [![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-apache-ignite/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-apache-ignite)
 
-## Software
+## Current software
 
 * Apache Ignite 1.3.0
-* Oracle JRE 8 Update 60
+* [OpenJDK 8u72](http://openjdk.java.net/projects/jdk8u/releases/8u72.html)
 
 ## Run
 
