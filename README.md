@@ -5,38 +5,41 @@ Lean (274MB) Apache Ignite Docker image based on `alpine:edge` and OpenJDK 8.
 
 ## Current software
 
-* Apache Ignite 1.3.0
 * [OpenJDK 8u72](http://openjdk.java.net/projects/jdk8u/releases/8u72.html)
+* Apache Ignite 1.5.0
 
 ## Run
 
 ```
-docker run --name ignite -d --net=host quay.io/pires/docker-apache-ignite:1.3.0
+docker run --name ignite -d --net=host quay.io/pires/docker-apache-ignite:1.5.0
 ```
 
 Now, run:
 ```
 $ docker logs -f ignite
-Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
-[11:32:21]    __________  ________________
-[11:32:21]   /  _/ ___/ |/ /  _/_  __/ __/
-[11:32:21]  _/ // (7 7    // /  / / / _/
-[11:32:21] /___/\___/_/|_/___/ /_/ /___/
-[11:32:21]
-[11:32:21] ver. 1.3.0-incubating#20150710-sha1:2ade6d00
-[11:32:21] 2015 Copyright(C) Apache Software Foundation
-[11:32:21]
-[11:32:21] Ignite documentation: http://ignite.incubator.apache.org
-[11:32:21]
-[11:32:21] Quiet mode.
-[11:32:21]   ^-- Logging to file '/ignite/work/log/ignite-0b0f5c9c.0.log'
-[11:32:21]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
-[11:32:21]
-[11:32:21] Configured plugins:
-[11:32:21]   ^-- None
-[11:32:21]
-[11:32:23] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
-[11:32:23]
-[11:32:23] Ignite node started OK (id=0b0f5c9c)
-[11:32:23] Topology snapshot [ver=1, server nodes=1, client nodes=0, CPUs=1, heap=1.0GB]
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+[15:08:33]    __________  ________________
+[15:08:33]   /  _/ ___/ |/ /  _/_  __/ __/
+[15:08:33]  _/ // (7 7    // /  / / / _/
+[15:08:33] /___/\___/_/|_/___/ /_/ /___/
+[15:08:33]
+[15:08:33] ver. 1.5.0-final#20151229-sha1:f1f8cda2
+[15:08:33] 2015 Copyright(C) Apache Software Foundation
+[15:08:33]
+[15:08:33] Ignite documentation: http://ignite.apache.org
+[15:08:33]
+[15:08:33] Quiet mode.
+[15:08:33]   ^-- Logging to file '/ignite/work/log/ignite-e82b17be.0.log'
+[15:08:33]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[15:08:33]
+[15:08:33] OS: Linux 4.1.17-boot2docker amd64
+[15:08:33] VM information: OpenJDK Runtime Environment 1.8.0_72-internal-alpine-r2-b15 Oracle Corporation OpenJDK 64-Bit Server VM 25.72-b15
+[15:08:33] Configured plugins:
+[15:08:33]   ^-- None
+[15:08:33]
+[15:08:35] Security status [authentication=off, tls/ssl=off]
+[15:08:37] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[15:08:37]
+[15:08:37] Ignite node started OK (id=e82b17be)
+[15:08:37] Topology snapshot [ver=1, servers=1, clients=0, CPUs=1, heap=1.0GB]
 ```
